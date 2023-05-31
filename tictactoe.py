@@ -43,17 +43,17 @@ def insert(letter, pos):
                 print("Computer wins!")
             else:
                 print("Human wins!")
-            return True  # Indicate that a win occurred
+            return True  
         if check_draw():
             print("It's a draw!")
-            return True  # Indicate a draw
+            return True  
     else:
         if letter == 'O':
             print("Position not free, re-enter a position")
             human_move(letter)
         else:
             computer_move(letter)
-    return False  # Indicate that no win or draw occurred
+    return False  
 
 def human_move(letter):
     pos = int(input("Enter the position to insert (1-9): "))
